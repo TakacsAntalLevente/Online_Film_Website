@@ -1,0 +1,257 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #4404aa;
+    height: 600px;
+}
+
+
+header{
+    height: 50px;
+    color: black;
+    background-color: #4404aa;
+    margin: 0;
+    padding: 0;
+    box-shadow: 15px,14px,15px, #000000;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder ;
+}
+
+.left_bar{
+    display: block;
+    margin-right: 20px;
+    height: 100%;
+    width: 15%;
+    background-color: black;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #650793;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4404aa;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 600px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+button{
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  
+  
+  
+}
+
+.container {
+    display: flex;
+    background-color: #4404aa;
+    padding-bottom: 50px;
+}
+.container2 {
+  display: flex;
+  background-color: #4404aa;
+  padding-bottom: 50px;
+  
+}
+.containermenu {
+    
+    display: flex;
+    background-color: #4404aa;
+}
+.containermenu2 {
+    
+  display: flex;
+  background-color: #4404aa;
+}
+
+.Cat {
+    background-color: blue;
+    border-radius: 10px;
+    width: 100px;
+    flex: 1;
+    height: 25px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Cat2 {
+  background-color: red;
+  border-radius: 10px;
+  width: 100px;
+  flex: 1;
+  height: 25px;
+  margin: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.films{
+  background-color: blue;
+  border-radius: 10px;
+  width: 100px;
+  flex: 1;
+  height: 25px;
+  margin: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.box {
+    width: 100px;
+    flex: 2;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 5px 10px rgb(23, 23, 23);
+    border: 20px;
+}
+
+.box2 {
+  width: 100px;
+  flex: 1;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 5px 10px rgb(23, 23, 23);
+  border: 20px;
+}
+
+.boxfilm {
+  width: 100px;
+  flex: 1;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 5px 10px rgb(23, 23, 23);
+  border: 20px;
+}
+.box:hover{
+    transform: scale(1.1);
+    
+}
+.box2:hover{
+  transform: scale(1.1);
+}
+.boxfilm:hover{
+  transform: scale(1.1);
+}
+
+.box:nth-child(1) {
+    background-image: url('kepek/scifi.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.box:nth-child(2) {
+    background-image: url('kepek/horror.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.box:nth-child(3) {
+    background-image: url('kepek/crime.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.box2:nth-child(1){
+  background-image: url('kepek/fantasy.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.box2:nth-child(2){
+  background-image: url('kepek/thriller.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.box2:nth-child(3){
+  background-image: url('kepek/action.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.boxfilm:nth-child(1){
+  background-image: url('Film.series_kepek/interstellar.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+
+

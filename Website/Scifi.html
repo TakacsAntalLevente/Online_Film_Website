@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Categories</title>
+    </head>
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <br>
+        <div style="background-color: red;border-radius: 10px; text-align: center;">Jelenleg nem elérhető -> Piros</div>
+        <br>
+        <div style="background-color: blue;border-radius: 10px;text-align: center;">Fejleszés alatt -> Kék</div>
+        <br>
+        <div style="background-color: green; border-radius: 10px;text-align: center;">Elérhtő -> Zöld</div>
+      </div>
+
+      <div class="content">
+        <div class="containermenu">
+            <div class="films">Interstellar</div>
+            <div class="films">asd</div>
+            <div class="films">asd</div>
+        </div>
+        <div class="container">
+            <div class="boxfilm" onclick="openLocalFile('interstellar.html')"></div>
+            <div class="boxfilm" onclick="openLocalFile('horror.html')"></div>
+            <div class="boxfilm" onclick="openLocalFile('Crime.html')"></div>
+        </div>
+      </div>
+    
+      <script src="path.js"></script>
+</body>
+</html>
